@@ -1,0 +1,406 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  height: 100vh;
+  min-height: 800px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.87);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(./assets/bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+}
+
+#app {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: 450px;
+  aspect-ratio: 9/16;
+
+  background-image: url(./assets/bg.png);
+  background-position: center 75px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  padding: 15px;
+  background-color: #000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sound__controls {
+  cursor: pointer;
+}
+
+.header__logo {
+  width: 90px;
+  height: 50px;
+}
+
+#pixi-container {
+  flex-grow: 2;
+}
+
+#pixi-container > canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* CONTROLS */
+.controls {
+  height: 100%;
+  background:
+    url("./assets/controls.png"),
+    linear-gradient(365deg, rgba(99, 48, 43, 0.9) 0%, rgba(74, 47, 43, 0.9) 100%);
+  background-position: center;
+  background-size: 95%, cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid #584336;
+  border-radius: 15px;
+
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.controls__text {
+  position: relative;
+  width: 29%;
+
+  font-size: 1rem;
+  color: white;
+}
+
+.bet {
+  text-align: left;
+}
+
+.bet__control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.bet__control span {
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.label {
+  position: absolute;
+  top: -10px;
+  display: block;
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: lightgray;
+}
+
+.label-bet {
+  right: 0;
+}
+
+.tap {
+  width: 80px;
+  height: 80px;
+  background-image: url("./assets/play.png");
+  border: none;
+  outline: none;
+  background-size: contain;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.balance {
+  text-align: right;
+}
+
+.dollar-sign {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* LOADING SCREEN */
+.loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(171, 171, 171, 1) 0%,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(0, 0, 0, 1)
+  );
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.loading-logo {
+  width: 250px;
+  position: relative;
+  animation: top-down 1s linear infinite;
+}
+
+.loading-bar {
+  background-color: #000;
+  width: 100%;
+  height: 15px;
+  border-radius: 15px;
+}
+
+.loading-progress {
+  background-color: #ffae00;
+  width: 100%;
+  height: 15px;
+  border-radius: 15px;
+}
+
+.fading {
+  animation: fading 0.7s linear;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100dvh;
+  top: 0;
+  left: 0;
+  background: #000000;
+  z-index: 50;
+  opacity: 0.5;
+  animation: darken 0.1s linear 1;
+}
+
+.modal,
+.modal-final {
+  position: absolute;
+  width: 200%;
+  top: -300%;
+  left: 0;
+  z-index: 10000;
+}
+
+.modal__title {
+  position: relative;
+
+  left: -10px;
+  top: -7px;
+  background-color: #8b5435c9;
+  border: 1px solid #dab49e;
+  padding: 10px;
+  border-radius: 15px;
+  width: max-content;
+
+  text-align: center;
+  font-size: 1rem;
+  text-transform: none;
+  animation: top-down 0.65s linear infinite;
+}
+
+.modal__title::after {
+  position: absolute;
+  z-index: 2;
+  left: 15px;
+  bottom: -10px;
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
+  content: "";
+  border: 5px solid transparent;
+  border-top: 5px solid #8b5435;
+}
+
+.modal__title::before {
+  position: absolute;
+  z-index: 1;
+  left: 15px;
+  bottom: -12px;
+  background-color: transparent;
+  width: 11px;
+  height: 11px;
+  content: "";
+  border: 5px solid transparent;
+  border-top: 5px solid #dab49e;
+}
+
+.modal__button {
+  margin-top: 10px;
+  width: 53%;
+  height: 50px;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+@keyframes top-down {
+  0% {
+    top: -7px;
+  }
+  25% {
+    top: -8.5px;
+  }
+  50% {
+    top: -10px;
+  }
+  75% {
+    top: -8.5px;
+  }
+  100% {
+    top: -7px;
+  }
+}
+
+@keyframes darken {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.modal-final {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+
+.modal__title-final {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(229, 229, 3);
+  text-shadow: 0px 5px 5px #000;
+}
+
+.modal__text-final {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(229, 229, 3);
+  text-shadow: 0px 5px 5px #000;
+}
+
+.modal__button-final {
+  margin-top: 20px;
+  background: rgb(0, 168, 0);
+  border: 1px solid #dab49e;
+  border-radius: 15px;
+  outline: none;
+  padding: 15px 35px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  animation: scale-in-out 1s linear infinite;
+}
+
+@keyframes scale-in-out {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@media (max-width: 411px) {
+  #app {
+    aspect-ratio: initial;
+  }
+  .controls__text {
+    font-size: 0.825rem;
+  }
+}
+
+@media (max-width: 367px) {
+  .modal__title {
+    font-size: 0.825rem;
+    width: 150%;
+  }
+
+  .controls {
+    justify-content: center;
+  }
+
+  .label {
+    font-size: 0.5rem;
+    top: -8px;
+  }
+
+  @keyframes top-down {
+    0% {
+      top: -17px;
+    }
+    25% {
+      top: -18.5px;
+    }
+    50% {
+      top: -20px;
+    }
+    75% {
+      top: -18.5px;
+    }
+    100% {
+      top: -17px;
+    }
+  }
+}

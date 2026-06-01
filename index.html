@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/webp"
+      href="data:image/webp;base64,UklGRloEAABXRUJQVlA4WAoAAAAYAAAAHwAAHwAAQUxQSDcBAAABkGtr27E579i23c3ENs7BNluzSqZL0lmVKtu2bWtcRR+up/j0vmcQEROgguNqJm++90/k76OdMxriVeS4bs0v/oGICFhv5qXGRihY/smFIGi5sLY0VNMxC98gsM/3jQmI6X8fXwn0wPORMX5N9/FKaA8vBvgUHAeQyABXKjxzLUA0As6GRKWyzgGiFWgZqmKn/jbB7sT6Z4BoBr70mGGZcVbsAUQ7cPKpqc8dpv79NyWWsS5T9itTPw6YurjIBnQB7rpun820DErcBqDN3pOihrVpA27WK5W4yQV0AOxNUUrV3NQD8LqH8g45fOevBoGWMTE+MUn9WkSESK2z4lVg4zcP4AE878fFq+BuP6IgQnOsCrnIofPMLzfI7WyBU2khkg/CqbyB6y+3uiJu+42Noxe7/OzmAwBWUDggHgIAANAMAJ0BKiAAIAA+SRqLQ6KhoRv6rAAoBIS2AE6ZQj8b1X8VfwA6VNw6wHkCcU6xXvAOgB/w/OO6y/0AOky+4D2gMAE2ffVfAGqDaBWgyzNIFMv8hvnhDx9dzG7LqXyOkf31zpLsjYT9Mpk0Mt+BAAD++LkdUVHG9JwMjjo3844Irvq4ieo8rXDRyW/eFs5+BCkijUN1qUv+yn3ZRf6w/HXbGmEWgP5PB6zZfa9Fov6w5fr9qWiQMD1rPO4zeZDclP3eWv765Ph+eZ1//mMo3KG45xbmL6INJkfQiojFOW4dn//oefaF38PwAlTvvdMJSR99b7te6hl/HSyvcldt6+A2j62+q5f0G4XMTCvTO7yVPcRBtVjJmFvVNRgJ6xlS0KeTD9MT+1b26qPML7dztcP4ggafh+bLwULI4lBQYe2fLV8ex/K34qN4+NvFVGaYILaiXz3FBjVjgp6tHu5oaJSQESd/t2yZ4RbfCuepCSPNoUbeZmiU37OkOTAQug5I/48yXfjIiHNSz+3yo9brAneoEnbKXoBf5KkDMSAXLMoW1D7PcWtnNngyDeeMWT/A+tMsPW77YHLqXH/wYxpWXPOa2c11Mj6pu65umG3HnSP4OhEdchDLHBQT+Enr6UPB1/u8gTmIkeoYl6G2+iPfTz4vt0QK5NrB3Zqc2YdfoZHDqZp6SYkYEnBnw9Eo/dDqSBGAvpfXl+KFAadNQAAARVhJRtYAAABJSSoACAAAAAYAEgEDAAEAAAAAAAAAGgEFAAEAAABWAAAAGwEFAAEAAABeAAAAKAEDAAEAAAABAAAAMQECABAAAABmAAAAaYcEAAEAAAB2AAAAAAAAAAAAAAABAAAAAAAAAAEAAABQYWludC5ORVQgNS4xLjgABQAAkAcABAAAADAyMzABoAMAAQAAAAEAAAACoAQAAQAAACwBAAADoAQAAQAAACwBAAAFoAQAAQAAALgAAAAAAAAAAgABAAIABAAAAFI5OAACAAcABAAAADAxMDAAAAAA"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Forest Arrow Game</title>
+  </head>
+
+  <body class="page">
+    <div id="app">
+      <header class="header">
+        <img class="header__logo" src="./src/assets/logo.png" alt="logo" />
+        <img class="sound__controls" src="#" alt="sound on/off" />
+      </header>
+
+      <div id="pixi-container"></div>
+
+      <footer class="footer controls">
+        <p id="bet" class="bet controls__text">
+          <span class="label label-bet">Bet</span>
+          <span class="dollar-sign">$</span>
+          <span class="bet__amount">20</span>
+          <span class="bet__control">
+            <span>▲</span>
+            <span>▼</span>
+          </span>
+        </p>
+
+        <button id="tap" class="tap">Tap</button>
+
+        <p class="balance controls__text" id="balance">
+          <span class="label label-balance">Balance</span>
+          <span class="dollar-sign">$</span>
+          <span class="balance__amount">1000</span>
+        </p>
+      </footer>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+      <div class="loading-content">
+        <img class="loading-logo" src="./src/assets/logo.png" alt="logo" />
+
+        <p id="loading-text" class="loading-text">0%</p>
+        <div class="loading-bar">
+          <div id="loading-progress" class="loading-progress"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

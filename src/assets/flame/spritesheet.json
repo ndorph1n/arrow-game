@@ -1,0 +1,591 @@
+{
+  "frames": {
+    "tile1.png": {
+      "filename": "tile1.png",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 200
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 200,
+        "h": 200
+      },
+      "sourceSize": {
+        "w": 200,
+        "h": 200
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile2.png": {
+      "filename": "tile2.png",
+      "frame": {
+        "x": 202,
+        "y": 0,
+        "w": 134,
+        "h": 172
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 134,
+        "h": 172
+      },
+      "sourceSize": {
+        "w": 134,
+        "h": 172
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile3.png": {
+      "filename": "tile3.png",
+      "frame": {
+        "x": 404,
+        "y": 0,
+        "w": 146,
+        "h": 161
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 146,
+        "h": 161
+      },
+      "sourceSize": {
+        "w": 146,
+        "h": 161
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile4.png": {
+      "filename": "tile4.png",
+      "frame": {
+        "x": 606,
+        "y": 0,
+        "w": 137,
+        "h": 175
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 175
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 175
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile5.png": {
+      "filename": "tile5.png",
+      "frame": {
+        "x": 808,
+        "y": 0,
+        "w": 114,
+        "h": 182
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 114,
+        "h": 182
+      },
+      "sourceSize": {
+        "w": 114,
+        "h": 182
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile6.png": {
+      "filename": "tile6.png",
+      "frame": {
+        "x": 0,
+        "y": 202,
+        "w": 111,
+        "h": 185
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 111,
+        "h": 185
+      },
+      "sourceSize": {
+        "w": 111,
+        "h": 185
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile7.png": {
+      "filename": "tile7.png",
+      "frame": {
+        "x": 202,
+        "y": 202,
+        "w": 151,
+        "h": 184
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 151,
+        "h": 184
+      },
+      "sourceSize": {
+        "w": 151,
+        "h": 184
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile8.png": {
+      "filename": "tile8.png",
+      "frame": {
+        "x": 404,
+        "y": 202,
+        "w": 142,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 142,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 142,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile9.png": {
+      "filename": "tile9.png",
+      "frame": {
+        "x": 606,
+        "y": 202,
+        "w": 126,
+        "h": 182
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 182
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 182
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile10.png": {
+      "filename": "tile10.png",
+      "frame": {
+        "x": 808,
+        "y": 202,
+        "w": 124,
+        "h": 185
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 124,
+        "h": 185
+      },
+      "sourceSize": {
+        "w": 124,
+        "h": 185
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile11.png": {
+      "filename": "tile11.png",
+      "frame": {
+        "x": 0,
+        "y": 404,
+        "w": 140,
+        "h": 176
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 140,
+        "h": 176
+      },
+      "sourceSize": {
+        "w": 140,
+        "h": 176
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile12.png": {
+      "filename": "tile12.png",
+      "frame": {
+        "x": 202,
+        "y": 404,
+        "w": 135,
+        "h": 180
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 135,
+        "h": 180
+      },
+      "sourceSize": {
+        "w": 135,
+        "h": 180
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile13.png": {
+      "filename": "tile13.png",
+      "frame": {
+        "x": 404,
+        "y": 404,
+        "w": 116,
+        "h": 184
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 116,
+        "h": 184
+      },
+      "sourceSize": {
+        "w": 116,
+        "h": 184
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile14.png": {
+      "filename": "tile14.png",
+      "frame": {
+        "x": 606,
+        "y": 404,
+        "w": 113,
+        "h": 185
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 113,
+        "h": 185
+      },
+      "sourceSize": {
+        "w": 113,
+        "h": 185
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile15.png": {
+      "filename": "tile15.png",
+      "frame": {
+        "x": 808,
+        "y": 404,
+        "w": 141,
+        "h": 185
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 141,
+        "h": 185
+      },
+      "sourceSize": {
+        "w": 141,
+        "h": 185
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile16.png": {
+      "filename": "tile16.png",
+      "frame": {
+        "x": 0,
+        "y": 606,
+        "w": 135,
+        "h": 169
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 135,
+        "h": 169
+      },
+      "sourceSize": {
+        "w": 135,
+        "h": 169
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile17.png": {
+      "filename": "tile17.png",
+      "frame": {
+        "x": 202,
+        "y": 606,
+        "w": 117,
+        "h": 181
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 117,
+        "h": 181
+      },
+      "sourceSize": {
+        "w": 117,
+        "h": 181
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile18.png": {
+      "filename": "tile18.png",
+      "frame": {
+        "x": 404,
+        "y": 606,
+        "w": 132,
+        "h": 182
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 132,
+        "h": 182
+      },
+      "sourceSize": {
+        "w": 132,
+        "h": 182
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile19.png": {
+      "filename": "tile19.png",
+      "frame": {
+        "x": 606,
+        "y": 606,
+        "w": 151,
+        "h": 152
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 151,
+        "h": 152
+      },
+      "sourceSize": {
+        "w": 151,
+        "h": 152
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile20.png": {
+      "filename": "tile20.png",
+      "frame": {
+        "x": 808,
+        "y": 606,
+        "w": 137,
+        "h": 154
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 154
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 154
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile21.png": {
+      "filename": "tile21.png",
+      "frame": {
+        "x": 0,
+        "y": 808,
+        "w": 137,
+        "h": 167
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 167
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 167
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "tile22.png": {
+      "filename": "tile22.png",
+      "frame": {
+        "x": 202,
+        "y": 808,
+        "w": 137,
+        "h": 170
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 137,
+        "h": 170
+      },
+      "sourceSize": {
+        "w": 137,
+        "h": 170
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "animations": {
+    "burning": [
+      "tile1.png",
+      "tile2.png",
+      "tile3.png",
+      "tile4.png",
+      "tile5.png",
+      "tile6.png",
+      "tile7.png",
+      "tile8.png",
+      "tile9.png",
+      "tile10.png",
+      "tile11.png",
+      "tile12.png",
+      "tile13.png",
+      "tile14.png",
+      "tile15.png",
+      "tile16.png",
+      "tile17.png",
+      "tile18.png",
+      "tile19.png",
+      "tile20.png",
+      "tile21.png",
+      "tile22.png"
+    ]
+  },
+  "meta": {
+    "app": "https://imagemagixonline.com",
+    "version": "1.0",
+    "image": "sprite-sheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1010,
+      "h": 1010
+    },
+    "scale": "1"
+  }
+}
